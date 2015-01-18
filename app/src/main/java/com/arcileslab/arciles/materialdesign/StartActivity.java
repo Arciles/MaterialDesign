@@ -7,15 +7,17 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Adapter;
 
 
 public class StartActivity extends ActionBarActivity {
 
+    Adapter adapter;
     private Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.start_activity_appbar_ontop);
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         toolbar.setTitle("Material Design");
         setSupportActionBar(toolbar);
